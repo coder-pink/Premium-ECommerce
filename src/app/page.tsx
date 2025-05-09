@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -12,12 +13,12 @@ export default function Home() {
         <p className="text-lg text-gray-600 mb-6 max-w-xl">
           Discover top-quality products, great deals, and seamless shopping experience.
         </p>
-        <a
+        <Link
           href="/products"
           className="inline-block px-6 py-3 bg-blue-600 text-white rounded-md text-base font-medium hover:bg-blue-700 transition"
         >
           Shop Now
-        </a>
+        </Link>
       </main>
 
     </>
