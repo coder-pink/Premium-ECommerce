@@ -1,53 +1,4 @@
 
-// 'use client';
-// import { FC, useEffect, useState } from "react";
-// import axios from "axios";
-// import ProductCard from "../../components/ProductCard";
-// import SkeletonLoader from "../../components/SkeletonLoader";
-
-// interface Product {
-//   id: number;
-//   title: string;
-//   price: number;
-//   category: string;
-//   image: string;
-// }
-
-// const ProductsPage: FC = () => {
-//   const [products, setProducts] = useState<Product[]>([]);
-//   const [loading, setLoading] = useState<boolean>(true);
-
-//   // Fetch products when the component mounts
-//   useEffect(() => {
-//     axios
-//       .get("https://fakestoreapi.com/products")
-//       .then((res) => {
-//         setProducts(res.data);
-//         setLoading(false);
-//       })
-//       .catch((err) => {
-//         console.error("Error fetching products", err);
-//         setLoading(false);
-//       });
-//   }, []);
-
-//   return (
-//     <div className="container mx-auto p-4">
-//       <h1 className="text-3xl font-bold mb-6">Browse Products</h1>
-//       {loading ? (
-//         <SkeletonLoader />
-//       ) : (
-//         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-//           {products.map((product) => (
-//             <ProductCard key={product.id} product={product} />
-//           ))}
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default ProductsPage;
 
 
 
@@ -127,8 +78,8 @@ const ProductsPage: FC = () => {
           <option value="all">All Categories</option>
           <option value="electronics">Electronics</option>
           <option value="jewelery">Jewelery</option>
-          <option value="men's clothing">Men's Clothing</option>
-          <option value="women's clothing">Women's Clothing</option>
+          <option value="men's clothing">Men&apos;s Clothing</option>
+          <option value="women's clothing">Women&apos;s Clothing</option>
         </select>
 
         <select
